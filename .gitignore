@@ -1,0 +1,24 @@
+# data & artifacts
+data/
+models/
+results/
+*.pkl
+*.h5
+*.pt
+*.onnx
+*.pickle
+
+# python cache & env
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+
+# notebooks
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
