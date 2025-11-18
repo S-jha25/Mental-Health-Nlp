@@ -1,16 +1,29 @@
-# Mental Health Detection from Journal Entries (NLP)
+# Mental Health NLP — Sentiment & Emotion Analysis
 
-This project builds an NLP classifier to detect mental-health related signals (e.g., neutral / anxiety / depression) from journal-style text.
+A lightweight NLP project analyzing a Mental Health Conversations dataset using classical NLP sentiment methods (TextBlob + VADER) and a rule-based emotion classifier.
 
-## Tech Stack
-Python, Pandas, NLTK, scikit-learn, (optionally: TensorFlow/PyTorch), Streamlit
+This project performs:
+- Exploratory Data Analysis (EDA)
+- Sentiment Analysis (polarity, subjectivity, VADER compound)
+- Emotion Tagging (sadness, joy, anger, fear, neutral, high-risk)
+- Cleaned, safe processed outputs (raw data excluded)
 
 ## Structure
-- `data/` (raw, processed) — keep raw data out of Git
-- `notebooks/` — EDA, model experiments
-- `src/` — reusable code (preprocessing, training, evaluation)
-- `models/` — saved models (ignored by Git)
-- `deployment/` — Streamlit/Flask app
+Mental-Health-Nlp/
+│
+├── Data/
+│ ├── raw/ # (Ignored from Git: contains original dataset)
+│ └── processed/ # Final outputs (safe to publish)
+│
+├── notebooks/
+│ └── 01_EDA.ipynb # Analysis notebook
+│
+├── src/
+│ └── process_lightweight.py # Reproducible processing script (to be added next)
+│
+├── requirements.txt # Dependencies
+├── README.md # Project documentation
+├── .gitignore # Raw data excluded
 
 ## Quickstart
 ```bash
