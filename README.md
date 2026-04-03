@@ -12,14 +12,14 @@ This project performs:
 Mental-Health-Nlp/
 │
 ├── Data/
-│ ├── raw/ # (Ignored from Git: contains original dataset)
-│ └── processed/ # Final outputs (safe to publish)
+│ ├── raw/ # (contains original dataset)
+│ └── processed/ # Final outputs
 │
 ├── notebooks/
 │ └── 01_EDA.ipynb # Analysis notebook
 │
 ├── src/
-│ └── process_lightweight.py # Reproducible processing script (to be added next)
+│ └── process_lightweight.py # Reproducible processing script 
 │
 ├── requirements.txt # Dependencies
 ├── README.md # Project documentation
